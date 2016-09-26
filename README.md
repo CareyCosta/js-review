@@ -9,6 +9,10 @@ Let's review us a JavaScript!
 1. Closures
 
 ## DOM
+1. DOM != HTML
+1. `document` vs `window`
+1. Retrieving DOM nodes
+1. Loading JS in the head vs the body
 
 ## jQuery
 
