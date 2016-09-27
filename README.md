@@ -21,3 +21,6 @@ Let's review us a JavaScript!
 1. Events
 
 ## AJAX
+1. Async vs Sync Programming
+1. The parts of an AJAX request
+1. Using callbacks to handle a response
