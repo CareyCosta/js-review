@@ -15,5 +15,9 @@ Let's review us a JavaScript!
 1. Loading JS in the head vs the body
 
 ## jQuery
+1. Document Ready
+1. The jQuery selector
+1. Using CSS selectors with jQuery
+1. Events
 
 ## AJAX
