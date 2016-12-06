@@ -28,6 +28,10 @@
 // console.log("And here's the document called from the window object:");
 // console.log(window.document);
 
+// Here's a command to scroll to a specific part of the page, for example
+// window.scrollTo(0, 1000);
+
+
 
 // We can get elements from the document a variety of ways:
 // var byId = document.getElementById("page-title");
