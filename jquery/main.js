@@ -2,8 +2,8 @@
 $(document).ready(function(){
   console.log('READY!');
 
-  // jQuery provides us with a master method we can use to select anything
-  // This method is called "jQuery()", but can also be accessed with "$()"
+  // jQuery provides us with a master function we can use to select anything
+  // This function is called "jQuery()", but can also be accessed with "$()"
   //
   // var body = jQuery('body');
   // console.log(body);
@@ -22,7 +22,7 @@ $(document).ready(function(){
   // jQuery can also set up event handlers
   // These trigger when a certain browser event happens
   // $("button").on("click", function(){
-  //   alert("I've been clicked!");
+  //   $('ul').append("<li class='some-class'>We have a class!</li>");
   // });
 
   // $("h2").on({
