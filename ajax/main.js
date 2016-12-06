@@ -2,22 +2,25 @@ $(document).ready(function(){
   ////// SYNC VS ASYNC //////
   //
   // Some code can be executed synchronously like so
-  // function foo() {
-  //   console.log('bar');
+  // function frodo() {
+  //   console.log("You're late");
   // }
-  // foo();
+
+  // function gandalf() {
+  //   console.log('A wizard is never late');
+  // }
+
+  // frodo();
+  // gandalf();
 
   // But sometimes we want code to execute out of order, or asynchronously
-  // Function will execute after 3000 milliseconds
-  // setTimeout(function(){ console.log('baz'); }, 3000);
+  // Here, the "gandalf" function will execute after 3000 milliseconds
+  // setTimeout(gandalf, 3000);
 
-  // Notice how if we switch the order of theses function calls,
-  // foo() still executes first
-  // setTimeout(function(){ console.log('baz'); }, 3000);
-  // function foo() {
-  //   console.log('bar');
-  // }
-  // foo();
+  // Notice how if we switch the order of these function calls,
+  // frodo() still executes first
+  // setTimeout(gandalf, 3000);
+  // frodo();
 
   ////// AJAX //////
   //
