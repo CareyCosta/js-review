@@ -23,65 +23,70 @@
 
 //////// SCOPE ////////
 
-// var bar;
-// function foo() {
-//   var bar = 'baz';
-//   console.log(bar);
+// var x;
+// function defineLocal() {
+//   var x = "I'm defined in the local scope of the defineLocal function";
+//   console.log("x = " + x);
 // }
-// foo(); // will print out 'baz'
-// console.log(bar); // will print undefined
+// defineLocal(); // will be defined
+// console.log("x = " + x); // will be undefined
 
 
-// function foo() {
-//   bar = "baz";
-//   console.log(bar);
+// function defineGlobal() {
+//   x = "I'm defined in the global scope";
+//   console.log("x = " + x);
 // }
-// foo(); // will print out 'baz'
-// console.log(bar); // will also print 'baz'
+// defineGlobal(); // will be defined
+// console.log("x = " + x); // will also be defined
 
 //////// NAMED VS ANONYMOUS FUNCTIONS ////////
 
-// function foo() {
-//   console.log("I'm a function named 'foo'");
+// This is a named function
+// function sam() {
+//   console.log("I am Sam. I am Sam. Sam I am.");
 // }
-// foo();
+// sam();
 
 
-// var bar = function() {
-//   console.log("I'm actually an anonymous function assigned to the variable 'bar'");
+// This is an anonymous function that we've assigned to a variable
+// var horton = function() {
+//   console.log("I meant what I said, and I said what I meant.");
 // }
-// bar();
+// horton();
 
 
+// This is an anonymous function
 // (function () {
-//   console.log("I don't have a name :(");
+//   console.log("Oh, the places you'll go!");
 // })();
 
 //////// CALLBACKS ////////
 
-// function foo(callback) {
-//   console.log("I'm 'foo', here's me invoking my callback:");
+// function first(callback) {
+//   console.log("I will print first");
 //   callback();
 // }
 
-// function bar() {
-//   console.log("I'm named function 'bar'");
+// function second() {
+//   console.log("I will print second");
 // }
 
-// foo(bar);
-
-// foo(function(){
-//   console.log("I'm an anonymous function be passed as a callback");
+// first(function(){
+//   console.log("I will print second");
 // });
+
+// first(second);
 
 //////// CLOSURES ////////
 
-// function foo() {
-//   var a = "I'm defined in 'foo'";
-//   function bar() {
+// function outer() {
+//   var a = "I'm defined in 'outer'";
+//   function inner() {
+//     var b = "I'm defined in 'inner'";
 //     console.log(a);
+//     console.log(b);
 //   }
-//   bar();
+//   inner();
 // }
-// foo();
+// outer();
 
