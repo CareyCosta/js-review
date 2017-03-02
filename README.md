@@ -1,4 +1,4 @@
-# JS Practice
+# JS Review 
 Let's review us a JavaScript!
 
 ## JS
